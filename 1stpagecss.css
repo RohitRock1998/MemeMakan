@@ -1,0 +1,30 @@
+header{
+    height: 40px;
+    background-color:#E6735C;
+}
+h1{
+font-weight: normal;
+text-align: center;
+margin: 0px ;
+}
+span{
+    color: black;
+    
+}
+
+  video {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  main {
+    background: white;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
