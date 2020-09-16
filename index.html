@@ -1,53 +1,67 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-  <link rel="stylesheet" href="1stpagecss.css">
-  <meta charset="utf-8">
-  </head>
-<body>
-  <header>
-    <div class="container">
-      <h1>|\/| E |\/| E  &#9829;  |\/| A K A N  </h1>
-    </div>
-  </header>
-  <div class="container">
-    <main>
-     
-      <video src="meme1.mp4" controls></video>
-      <p>Funny Interview Spanish laughing guy</p> 
-    </main>
-
-    <main>
-     
-      <video src="meme2.mp4" controls></video>
-      <p>Your Friend</p>
-    </main>
-
-    <main>
-      
-      <video src="meme3.mp4" controls></video>
-      <p>When arun had Greenry</p>
-    </main>
-
-    <main>
-      
-      <video src="meme4.mp4" controls></video>
-      <p>Bh***a margya humara</p>
-    </main>
-
-    <main>
-      
-      <video src="meme5.mp4" controls></video>
-      <p>Arun being Neeta </p>
-    </main>
-  </div>
-
-    
-
+  <head>
+    <title>Welcome to MemeMakan</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="1stpagecss.css">
+  </head> 
   
-  </div>
-</body> 
+  <body>
+      <div class="container">
+        <h1>Memes that helps cure Corona</h1>
+        <div class="row">
+          <div class="col">
+            <div class="feature-img">
+              <img src="Coffinmemepic.png" width="100%">
+              <img src="playbutton.png" class="play-btn" onclick="playVideo('Coffinmemevid.mp4')">
+            </div> 
+          </div>
+          <div class="col">
+            <div class="small-img-row">
+              <div class="small-img">
+                  <img src="BemyLittleHoneyMeme.jpg" >
+                  <img src="playbutton.png" class="play-btn" onclick="playVideo('BemyHoneyvid.mp4')">
+              </div>
+              <p>Be My little Honey</p>
+            </div>
+            <div class="small-img-row">
+              <div class="small-img">
+                  <img src="Mathmemepic.png" >
+                  <img src="playbutton.png" class="play-btn"onclick="playVideo('Mathmeme.mp4')" >
+              </div>
+              <p>ONLY nerds get it!!!</p>
+            </div>
+            <div class="small-img-row">
+              <div class="small-img">
+                  <img src="Trumpetmemepic.png" >
+                  <img src="playbutton.png" class="play-btn" onclick="playVideo('Trumpetmeme.mp4')">
+              </div>
+              <p>Sounds like my roommate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-player" id="videoplayer">
+        <video width="100%" controls autoplay id="myvideo">
+          <source src = "Coffinmemevid.mp4" type ="video/mp4">
+      </video>
+      <img src="closeicon.png" class="close-btn" onclick="stopvideo()">
+      </div>
+      <script>  
+      let videoplayer = document.getElementById("videoplayer");
+      let myvideo = document.getElementById("myvideo");
+        function stopvideo()
+        {
+          videoplayer.style.display = "none";
+          pause(file);
+        }
+        function playVideo(file){
+          myvideo.src = file;
+          
+          videoplayer.style.display= "block";
+          
 
-</html>
-
+        }
+      </script>
+  </body>
+  </html>
