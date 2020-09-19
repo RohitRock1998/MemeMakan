@@ -121,3 +121,14 @@ video:focus{
     transform: translate(-50%,-50%);
     cursor: pointer;
     }
+    @media (max-width: 1000px){
+        .final_meme_pic_container{
+            width: 100%;  /*not 33.3(3 in a row)% cuz of margin to right(breakpoint)*/
+            background-color: black;
+           
+           
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+    }
