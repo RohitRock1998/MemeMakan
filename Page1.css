@@ -75,7 +75,7 @@ body{
     height: auto;
 }
 .final_meme_pic_container{
-    width: 31.7%;  /*not 33.3(3 in a row)% cuz of margin to right(breakpoint)*/
+    width: 31.6%;  /*not 33.3(3 in a row)% cuz of margin to right(breakpoint)*/
     background-color: black;
     margin-right: 2.452%;/*break point*/
     float: left;
