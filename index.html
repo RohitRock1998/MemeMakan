@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to MemeMakan</title>
+    <title>MemeMakan: Memes that help cure corona</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="1stpagecss.css">
+    <link rel="stylesheet" href="Page1.css">
   </head> 
-  
   <body>
-      <div class="container">
-        <h1>Memes that helps cure Corona</h1>
-        <div class="row">
-          <div class="col">
-            <div class="feature-img">
-              <img src="Coffinmemepic.png" width="100%">
-              <img src="playbutton.png" class="play-btn" onclick="playVideo('Coffinmemevid.mp4')">
-            </div> 
-          </div>
-          <div class="col">
-            <div class="small-img-row">
-              <div class="small-img">
-                  <img src="BemyLittleHoneyMeme.jpg" >
-                  <img src="playbutton.png" class="play-btn" onclick="playVideo('BemyHoneyvid.mp4')">
-              </div>
-              <p>Be My little Honey</p>
-            </div>
-            <div class="small-img-row">
-              <div class="small-img">
-                  <img src="Mathmemepic.png" >
-                  <img src="playbutton.png" class="play-btn"onclick="playVideo('Mathmeme.mp4')" >
-              </div>
-              <p>ONLY nerds get it!!!</p>
-            </div>
-            <div class="small-img-row">
-              <div class="small-img">
-                  <img src="Trumpetmemepic.png" >
-                  <img src="playbutton.png" class="play-btn" onclick="playVideo('Trumpetmeme.mp4')">
-              </div>
-              <p>Sounds like my roommate</p>
-            </div>
-          </div>
+<header class="main_header">
+       <nav class="navbar">
+        <img class ="logo" src="Logo1.png" >
+        <div class="navbar_big">
+            <ul class="navbar_nav">
+                <li class="btn">Anime</li>
+                <li  class="btn">Movies</li>
+                <li class="btn">Random</li>
+            </ul>
         </div>
-      </div>
-      <div class="video-player" id="videoplayer">
-        <video width="100%" controls autoplay id="myvideo">
-          <source src = "Coffinmemevid.mp4" type ="video/mp4">
-      </video>
-      <img src="closeicon.png" class="close-btn" onclick="stopvideo()">
-      </div>
-      <script>  
-      let videoplayer = document.getElementById("videoplayer");
-      let myvideo = document.getElementById("myvideo");
-        function stopvideo()
-        {
-          videoplayer.style.display = "none";
-          pause(file);
-        }
-        function playVideo(file){
-          myvideo.src = file;
-          
-          videoplayer.style.display= "block";
-          
+       </nav>
+</header>
+<div class="section_type">
+  <p class="section_message">Fresh Memes</p>
+</div>
 
-        }
-      </script>
-  </body>
-  </html>
+<div class="main_section">
+  <div class="memes_block">
+
+  
+
+    <div class="block_row">
+      <div class="final_meme_pic_container">
+        <img class="memepic"src="Coffinmemepic.png" >
+        <img src="playbutton.png" class="play-btn"onclick="playVideo('Coffinmemevid.mp4')">
+      </div>
+      <div class="final_meme_pic_container">
+        <img class="memepic" src="BemyLittleHoneyMeme.jpg">
+        <img src="playbutton.png" class="play-btn"onclick="playVideo('BemyHOneyvid.mp4')">
+      </div>
+      <div class="final_meme_pic_container last_col">
+        <img class="memepic" src="Mathmemepic.png" >
+        <img src="playbutton.png" class="play-btn"onclick="playVideo('mathmeme.mp4')">
+      </div>
+    </div>
+    <div class="block_row">
+      <div class="final_meme_pic_container">
+        <img class="memepic"src="Trumpetmemepic.png" >
+        <img src="playbutton.png" class="play-btn"onclick="playVideo('Trumpetmeme.mp4')">
+      </div>
+      <div class="final_meme_pic_container">
+        <img class="memepic" src="AlienMeme.png">
+        <img src="playbutton.png" class="play-btn"onclick="playVideo('AlienMeme.mp4')">
+      </div>
+      <div class="final_meme_pic_container last_col">
+        <img class="memepic" src="Monsterslapped.png" >
+        <img src="playbutton.png" class="play-btn"onclick="playVideo('Monsterslapped.mp4')">
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="video-player" id="videoplayer">
+    <video width="100%" controls autoplay id="myvideo">
+      <source src = "Coffinmemevid.mp4" type ="video/mp4">
+  </video>
+  <img src="closeicon.png" class="close-btn" onclick="stopvideo()">
+  </div>
+</div>
+<script>  
+  let videoplayer = document.getElementById("videoplayer");
+  let myvideo = document.getElementById("myvideo");
+    function stopvideo()
+    {
+      videoplayer.style.display = "none";
+      myvideo.pause()
+    }
+    function playVideo(file){
+      myvideo.src = file; 
+      videoplayer.style.display= "block";
+    }
+  </script>
+
+</body>
+</html>

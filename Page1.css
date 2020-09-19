@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+
+header{
+    user-select: none;
+    font-size: .875rem;
+    width: 100%;
+    background-color: rgba(23,23,23,0.85); 
+    height: 65px;
+
+}
+.logo{
+    margin-top: 20px;
+    width:150px;
+    margin-left: 10px;
+    margin-bottom:20px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.navbar_nav li{
+    float:left;
+    display: block;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #6c757d;
+    opacity: 0.9;
+}
+.btn:hover{
+    background-color: red;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.navbar{
+   
+    display: flex ;
+}
+ul{
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    background-color: black;
+}
+.section_message{
+    margin-top:22px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.main_section{
+    width: 100%;
+    background-color: black;
+    height: 900px;
+}
+.memes_block{
+    width:80%;
+    margin:0 auto;
+    background-color:black;
+    height:100%;
+}
+.block_row{
+    width: 100%;
+    background-color: black;
+    margin-bottom:20px;    /*no effect idk why*/
+    height: auto;
+}
+.final_meme_pic_container{
+    width: 31.7%;  /*not 33.3(3 in a row)% cuz of margin to right(breakpoint)*/
+    background-color: black;
+    margin-right: 2.452%;/*break point*/
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+.last_col{
+    background-color: black;
+    margin-right:0px;
+   
+}   
+.final_meme_pic_container .memepic{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+}   
+
+.video-player{
+    width:80%;
+    position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  }
+  
+video:focus{
+    outline: none;
+  }
+  .close-btn{
+    position: absolute;
+    top:10px;
+    right:10px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .play-btn{
+    width:60px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    }
