@@ -3,20 +3,22 @@
   <head>
     <title>MemeMakan: Memes that help cure corona</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Page1.css">
   </head> 
   <body>
-<header class="main_header">
-       <nav class="navbar">
-        <img class ="logo" src="Logo1.png" >
-        <div class="navbar_big">
-            <ul class="navbar_nav">
-                <li class="btn">Anime</li>
-                <li  class="btn">Movies</li>
-                <li class="btn">Random</li>
-            </ul>
-        </div>
-       </nav>
+    <header class="header">
+      
+    <a href="#default" class="logo">
+      <img  src="Logo1.png" >
+    </a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Anime</a>
+    <a href="#about">Movies</a>
+  </div>
+
+      
 </header>
 <div class="section_type">
   <p class="section_message">Fresh Memes</p>
@@ -30,29 +32,29 @@
     <div class="block_row">
       <div class="final_meme_pic_container">
         <img class="memepic"src="Coffinmemepic.png" >
-        <img src="playbutton.png" class="play-btn"onclick="playVideo('Coffinmemevid.mp4')">
+        <img src="playbutton.png" class="play-btn" id="Coffinmemevid.mp4" onclick="playVideo('Coffinmemevid.mp4')">
       </div>
       <div class="final_meme_pic_container">
         <img class="memepic" src="BemyLittleHoneyMeme.jpg">
-        <img src="playbutton.png" class="play-btn"onclick="playVideo('BemyHOneyvid.mp4')">
+        <img src="playbutton.png" class="play-btn" id="BemyHOneyvid.mp4" onclick="playVideo('BemyHOneyvid.mp4')">
       </div>
       <div class="final_meme_pic_container last_col">
         <img class="memepic" src="Mathmemepic.png" >
-        <img src="playbutton.png" class="play-btn"onclick="playVideo('mathmeme.mp4')">
+        <img src="playbutton.png" class="play-btn" id="mathmeme.mp4"onclick="playVideo('mathmeme.mp4')">
       </div>
     </div>
     <div class="block_row">
       <div class="final_meme_pic_container">
         <img class="memepic"src="Trumpetmemepic.png" >
-        <img src="playbutton.png" class="play-btn"onclick="playVideo('Trumpetmeme.mp4')">
+        <img src="playbutton.png" class="play-btn" id = "Trumpetmeme.mp4" onclick="playVideo('Trumpetmeme.mp4')">
       </div>
       <div class="final_meme_pic_container">
         <img class="memepic" src="AlienMeme.png">
-        <img src="playbutton.png" class="play-btn"onclick="playVideo('AlienMeme.mp4')">
+        <img src="playbutton.png" class="play-btn" id="AlienMeme.mp4" onclick="playVideo('AlienMeme.mp4')">
       </div>
       <div class="final_meme_pic_container last_col">
         <img class="memepic" src="Monsterslapped.png" >
-        <img src="playbutton.png" class="play-btn"onclick="playVideo('Monsterslapped.mp4')">
+        <img src="playbutton.png" class="play-btn" id="Monsterslapped.mp4" onclick="playVideo('Monsterslapped.mp4')">
       </div>
     </div>
 
@@ -61,8 +63,8 @@
 
 
   <div class="video-player" id="videoplayer">
-    <video width="100%" controls autoplay id="myvideo">
-      <source src = "Coffinmemevid.mp4" type ="video/mp4">
+    <video class="video" width="100%" controls autoplay id="myvideo">
+      <source src = "" type ="video/mp4">
   </video>
   <img src="closeicon.png" class="close-btn" onclick="stopvideo()">
   </div>
@@ -79,6 +81,7 @@
       myvideo.src = file; 
       videoplayer.style.display= "block";
     }
+
   </script>
 
 </body>
