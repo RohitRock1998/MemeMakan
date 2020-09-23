@@ -199,3 +199,16 @@ video:focus{
         text-align: left;
       }
     }
+    
+    header .logo img{
+      height:50px;
+      width:120px;
+    }
+
+    header .logo {
+      margin-bottom:0px;
+      padding-bottom: 0px;
+    }
+    header .navbtn{
+      margin:9px;
+    }
