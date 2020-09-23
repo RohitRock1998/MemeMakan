@@ -3,9 +3,6 @@
     margin:0;
 }
 
-
-  
-
 body{
     color: #fff;
     background-color: black;
@@ -92,11 +89,7 @@ video:focus{
        
 
     }
-   
-      
- 
-
-      
+  
     .topnav {
       overflow: hidden;
       background-color: #333;
@@ -198,4 +191,17 @@ video:focus{
         width: 100%;
         text-align: left;
       }
+    }
+    
+    header .logo img{
+      height:50px;
+      width:120px;
+    }
+
+    header .logo {
+      margin-bottom:0px;
+      padding-bottom: 0px;
+    }
+    header .navbtn{
+      margin:9px;
     }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeMakan: Memes that help cure corona</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Page2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head> 
+  <body>
+    <header class="topnav" id="myTopnav">
+      
+    <a href="index.html" class="logo">
+      <img  src="Logo1.png" >
+    </a>
+    <a class="navbtn" href="index.html">Home</a>
+    <a href="#" class="navbtn active">Anime</a>
+    <a href="#about" class="navbtn">Movies</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="fa fa-bars icon" onclick="myFunction()"></a>
+</div>
+   
+</header>
+<div class="section_type">
+  <p class="section_message">Fresh Memes</p>
+</div>
+
+<div class="main_section">
+  <div class="memes_block">
+    <div class="block_row">
+      <div class="final_meme_pic_container">
+        <img class="memepic"src="anime1.png" >
+        <img src="playbutton.png" class="play-btn" id="anime1.mp4" onclick="playVideo('anime1.mp4')">
+      </div>
+      <div class="final_meme_pic_container">
+        <img class="memepic" src="anime2.png">
+        <img src="playbutton.png" class="play-btn" id="anime2.mp4" onclick="playVideo('anime2.mp4')">
+      </div>
+      <div class="final_meme_pic_container last_col">
+        <img class="memepic" src="anime3.png" >
+        <img src="playbutton.png" class="play-btn" id="anime3.mp4"onclick="playVideo('anime3.mp4')">
+      </div>
+    </div>
+    <div class="block_row">
+      <div class="final_meme_pic_container">
+        <img class="memepic"src="anime4.png" >
+        <img src="playbutton.png" class="play-btn" id = "anime4.mp4" onclick="playVideo('anime4.mp4')">
+      </div>
+      <div class="final_meme_pic_container">
+        <img class="memepic" src="anime5.png">
+        <img src="playbutton.png" class="play-btn" id="anime5.mp4" onclick="playVideo('anime5.mp4')">
+      </div>
+      <div class="final_meme_pic_container last_col">
+        <img class="memepic" src="anime6.png" >
+        <img src="playbutton.png" class="play-btn" id="anime6.mp4" onclick="playVideo('anime6.mp4')">
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="video-player" id="videoplayer">
+    <video class="video" width="100%" controls autoplay id="myvideo">
+      <source src = "" type ="video/mp4">
+  </video>
+  <img src="closeicon.png" class="close-btn" onclick="stopvideo()">
+  </div>
+</div>
+<script>  
+  let videoplayer = document.getElementById("videoplayer");
+  let myvideo = document.getElementById("myvideo");
+    function stopvideo()
+    {
+      videoplayer.style.display = "none";
+      myvideo.pause()
+    }
+    function playVideo(file){
+      myvideo.src = file; 
+      videoplayer.style.display= "block";
+    }
+
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+
+
+
+  </script>
+
+</body>
+</html>
